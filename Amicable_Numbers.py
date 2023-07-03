@@ -1,13 +1,17 @@
-def get_pfs(num):
+def fact(n):
     s=0
-    for i in range(1,num):
-        if num%i==0:
-            s+=i
+    for i in range(1,n):
+        if(n%i==0):
+            s=s+i
     return s
-
-a=int(input())
-b=int(input())
-if get_pfs(a)==b and get_pfs(b)==a:
-    print('Amicable')
+    
+    
+n=int(input())
+m=int(input())
+s=fact(n)
+x=fact(m)
+if(s==m and x==n):
+     print("Amicable")
 else:
-    print('Not Amicable')
+    print("Not Amicable")
+        
